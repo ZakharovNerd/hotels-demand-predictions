@@ -41,7 +41,7 @@ def run():
     st.title("Weather Forecast ")
 
     # Sample data (you can modify this part to accept user input or different data sources)
-    values = [2.4, 4.5, 5.3, 2.2, 0.6, 3.1, 2.2, 0.9, 1.4, 5.3, -0.0, 2.7, -0.2, 3.3, 4.5, 2.2, 3.5, -0.3, 0.2, 4.5, 5.4, 0.1, 4.1, 0.9, 1.2, 3.0, 0.0, 4.4, 1.6, 0.3]
+    values = [2.4, 4.5, 5.3, 2.2, 0.6, 3.1, 2.2, 0.9, 1.4, 5.3, 0.0, 2.7, 0.2, 3.3, 4.5, 2.2, 3.5, 0.3, 0.2, 4.5, 5.4, 0.1, 4.1, 0.9, 1.2, 3.0, 0.0, 4.4, 1.6, 0.3]
 
     days_of_month = list(range(1, 31))
 
