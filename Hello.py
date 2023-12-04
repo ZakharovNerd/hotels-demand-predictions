@@ -14,25 +14,26 @@
 
 import streamlit as st
 from streamlit.logger import get_logger
-from heatmapcalendar import create_calendar_heatmap
-
 
 LOGGER = get_logger(__name__)
 
 
 def run():
-    st.title("Calendar Heatmap")
+    st.set_page_config(
+        page_title="Hotel Demand prediction",
+        page_icon="👋",
+    )
 
-    # Sample data (you can modify this part to accept user input or different data sources)
-    values = [30.2, 37.6, 32.7, 32.2, 37.1, 30.9, 32.9, 35.5, 30.9, 35.7, 31.1, 33.9, 32.7, 30.1, 40.9, 36.2, 36.5, 32.9, 37.4, 33.0, 36.4, 31.9, 30.2, 33.9, 33.7, 31.3, 33.7, 31.0, 34.0, 32.5]
+    st.write("# Welcome to 07 Lit preds 👋")
 
-    days_of_month = list(range(1, 31))
+    st.sidebar.success("Select a segment above.")
 
-    # Creating the heatmap
-    fig, ax = create_calendar_heatmap(values, days_of_month)
+    st.markdown(
+        """
+        This is a prototype of demand prediction using exogenous data using ETNA library for time-series analysis
+    """
+    )
 
-    # Displaying the heatmap in Streamlit
-    st.pyplot(fig)
 
 if __name__ == "__main__":
     run()
