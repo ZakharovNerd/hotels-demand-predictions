@@ -4,5 +4,4 @@ pandas
 pydeck
 streamlit
 matplotlib
-seaborn
 numpy
