@@ -24,11 +24,11 @@ def run():
     st.title("Calendar Heatmap")
 
     # Sample data (you can modify this part to accept user input or different data sources)
-    values = [24, 20, 16, 26, 28, 27, 30,
-23, 22, 24, 25, 24, 23, 30,
-26, 26, 27, 23, 27, 23, 20,
-28, 30, 24, 24, 31, 23, 21,
-24, 23]
+    values =  [ 24, 20, 16, 26, 28, 37, 30,
+                23, 22, 24, 25, 24, 33, 30,
+                26, 26, 27, 23, 27, 34, 20,
+                28, 30, 24, 24, 31, 30, 31,
+                24, 23]
 
     days_of_month = list(range(1, 31))
 
